@@ -4,10 +4,6 @@
 /node_modules
 /.pnp
 .pnp.js
-<<<<<<< HEAD
-.idea/
-=======
->>>>>>> 4568942 (The journey begins)
 
 # testing
 /coverage
@@ -25,4 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
