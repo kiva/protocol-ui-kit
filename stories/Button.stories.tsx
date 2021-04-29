@@ -1,13 +1,21 @@
 import React from "react";
 import "../src/common/ui.scss";
+<<<<<<< HEAD
 import { Button } from "../src";
 
 export default {
   title: "App Button",
+=======
+import {Button} from "../src";
+
+export default {
+  title: "Default",
+>>>>>>> 5fbac97 (Ready to create NPM package)
   component: Button,
 };
 
 export const Default = (): React.ReactNode => (
+<<<<<<< HEAD
   <div
     className="flex items-center justify-center"
     style={{ margin: "auto 0", background: "#f8f8f8", height: "75vh" }}
@@ -45,3 +53,10 @@ export const Docs = (): React.ReactNode => (
     />
   </div>
 );
+=======
+  <div style={{ width: 350 }}>
+    <Button label={"Test Button"} />
+  </div>
+);
+
+>>>>>>> 5fbac97 (Ready to create NPM package)

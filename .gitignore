@@ -5,9 +5,13 @@
 /.pnp
 .pnp.js
 <<<<<<< HEAD
+<<<<<<< HEAD
 .idea/
 =======
 >>>>>>> 4568942 (The journey begins)
+=======
+.idea/
+>>>>>>> 5fbac97 (Ready to create NPM package)
 
 # testing
 /coverage

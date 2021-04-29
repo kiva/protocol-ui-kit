@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { FunctionComponent } from "react";
 import "./Button.scss";
 
@@ -16,5 +17,20 @@ export const Button: FunctionComponent<ButtonProps> = (prop) => {
         <span className="text-center text-gray-600">{prop.caption}</span>
       </div>
     </div>
+=======
+import React, { FunctionComponent} from "react";
+import "./Button.scss";
+
+export interface ButtonProps {
+  label: string,
+  onClick?: () => void;
+}
+
+export const Button: FunctionComponent<ButtonProps> = ({
+  label, onClick
+}) => {
+  return (
+    <button className="jurne-button" onClick={onClick}>{label}</button>
+>>>>>>> 5fbac97 (Ready to create NPM package)
   );
 };
