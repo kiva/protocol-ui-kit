@@ -2,6 +2,7 @@ import { create } from '@storybook/theming';
 
 export default create({
 <<<<<<< HEAD
+<<<<<<< HEAD
   base: 'light',
   brandTitle: 'Protocols UI Kit',
   brandUrl: 'https://kiva.org',
@@ -37,4 +38,10 @@ export default create({
   brandUrl: 'https://kiva.org',
   brandImage: 'https://kiva.org/logo.svg',
 >>>>>>> 5fbac97 (Ready to create NPM package)
+=======
+  base: 'light',
+  brandTitle: 'Jurne UI Kit',
+  brandUrl: 'https://kiva.org',
+  brandImage: '/img/logo.svg',
+>>>>>>> 30b6f2d (Introduce tailwind and the first component)
 });

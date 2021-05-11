@@ -80,8 +80,8 @@
 >>>>>>> 5fbac97 (Ready to create NPM package)
   "scripts": {
     "release": "release-it",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook -s public",
     "build": "rollup -c",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
     "test": "jest"
@@ -138,10 +138,11 @@
 >>>>>>> 4568942 (The journey begins)
 =======
   "dependencies": {
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
     "bootstrap": "^4.6.0",
-    "react-bootstrap": "^1.5.2"
+    "react": "16.13.1",
+    "react-bootstrap": "^1.5.2",
+    "react-dom": "16.13.1",
+    "tailwindcss": "^2.1.2"
   }
 >>>>>>> 5fbac97 (Ready to create NPM package)
 }
