@@ -1,0 +1,10 @@
+.idea/
+.storybook/
+.eslintrc
+.prettierrc
+src/
+images/
+.npmrc
+jest.config.js
+rollup.config.js
+tsconfig.json
