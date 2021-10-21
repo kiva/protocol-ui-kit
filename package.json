@@ -1,14 +1,9 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5fbac97 (Ready to create NPM package)
-  "name": "@protocol/web-ui",
+  "name": "@kiva/protocol-ui-kit",
   "version": "1.0.1",
   "description": "Protocol Web UI",
   "main": "build/index.js",
   "module": "build/index.es.js",
-<<<<<<< HEAD
   "scripts": {
     "release": "release-it",
     "storybook": "start-storybook -s ./public -p 6006",
@@ -62,87 +57,21 @@
     "webpack": "^5.31.2"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "react": "16.13.1",
-    "react-bootstrap": "^1.5.2",
-    "react-dom": "16.13.1",
+    "@popperjs/core": "^2.10.2",
+    "autoprefixer": "^10.3.7",
+    "bootstrap": "^5.1.1",
+    "jquery": "^1.12.4",
+    "popper.js": "^1.16.1",
+    "postcss": "^8.3.10",
+    "qrcode": "^1.4.4",
+    "react": "^16.14.0",
+    "react-bootstrap": "^2.0.0-rc.1",
+    "react-bootstrap-icons": "^1.5.0",
+    "react-dom": "^16.14.0",
     "tailwindcss": "^2.1.2"
   }
-=======
-  "name": "protocol-web-ui",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-=======
->>>>>>> 5fbac97 (Ready to create NPM package)
-  "scripts": {
-    "release": "release-it",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s public",
-    "build": "rollup -c",
-    "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
-    "test": "jest"
-  },
-  "author": "Kiva",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@rollup/plugin-commonjs": "^15.1.0",
-    "@rollup/plugin-node-resolve": "^9.0.0",
-    "@storybook/addon-actions": "6.1.21",
-    "@storybook/addon-links": "6.1.21",
-    "@storybook/addons": "6.1.21",
-    "@storybook/preset-scss": "1.0.3",
-    "@storybook/react": "6.1.21",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.0.4",
-    "@types/jest": "^26.0.14",
-    "@types/node": "^14.11.2",
-    "@types/testing-library__jest-dom": "^5.9.3",
-    "@types/testing-library__react": "^10.2.0",
-    "@typescript-eslint/eslint-plugin": "^4.3.0",
-    "@typescript-eslint/parser": "^4.3.0",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^5.2.0",
-    "eslint": "^7.10.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-jest": "^24.0.2",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.21.2",
-    "fork-ts-checker-webpack-plugin": "^5.2.0",
-    "html-webpack-plugin": "^5.3.1",
-    "jest": "^26.4.2",
-    "prettier": "^2.1.2",
-    "release-it": "^14.5.0",
-    "rollup": "^2.28.2",
-    "rollup-plugin-copy": "^3.4.0",
-    "rollup-plugin-peer-deps-external": "^2.2.3",
-    "rollup-plugin-scss": "^2.6.1",
-    "rollup-plugin-typescript2": "^0.27.3",
-    "sass": "^1.32.8",
-    "sass-loader": "^10.1.1",
-    "style-loader": "^2.0.0",
-    "ts-jest": "^26.4.0",
-    "ts-loader": "^8.0.4",
-    "typescript": "^4.0.3",
-    "webpack": "^5.31.2"
-  },
-  "publishConfig": {
-    "access": "restricted"
-  },
-<<<<<<< HEAD
-  "dependencies": {}
->>>>>>> 4568942 (The journey begins)
-=======
-  "dependencies": {
-    "bootstrap": "^4.6.0",
-    "react": "16.13.1",
-    "react-bootstrap": "^1.5.2",
-    "react-dom": "16.13.1",
-    "tailwindcss": "^2.1.2"
-  }
->>>>>>> 5fbac97 (Ready to create NPM package)
 }
