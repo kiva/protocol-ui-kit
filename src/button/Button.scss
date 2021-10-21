@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-.protocol-ui-card {
-  font-family: inherit;
-  width: 300px;
-  height: 300px;
-=======
-.jurne-button {
-  outline: none;
-  padding: 5px;
->>>>>>> 5fbac97 (Ready to create NPM package)
-=======
-.jurne-card {
-  font-family: inherit;
-  width: 300px;
-  height: 300px;
->>>>>>> 30b6f2d (Introduce tailwind and the first component)
+
+button {
+  height: 50px;
+  border-radius: 16px !important;
+  background-color: #004FD4 !important;
+  font-family: 'Roboto Mono', monospace;
+  padding: 16px 30px !important;
+  line-height: 18.46px !important;
 }
