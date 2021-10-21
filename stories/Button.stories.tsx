@@ -5,7 +5,6 @@ import "../src/common/ui.scss";
 import { Button } from "../src";
 
 export default {
-<<<<<<< HEAD
   title: "App Button",
 =======
 import {Button} from "../src";
@@ -19,9 +18,6 @@ import { Button } from "../src";
 export default {
   title: "App Button",
 >>>>>>> 30b6f2d (Introduce tailwind and the first component)
-=======
-  title: "Button",
->>>>>>> 3fefebf (New components added: QRCode, FormInput, Alert, ActionCard, Button)
   component: Button,
 };
 
@@ -49,7 +45,9 @@ export const NotherStory = (): React.ReactNode => (
     style={{ margin: "auto 0", background: "#f8f8f8", height: "75vh" }}
   >
     <Button
-      title="PRIMARY"
+      title="Fingerprint Scan"
+      caption="User fingerprint to access your records"
+      src="/img/icons/fingerprint.svg"
     />
   </div>
 );
@@ -60,7 +58,9 @@ export const Docs = (): React.ReactNode => (
     style={{ margin: "auto 0", background: "#f8f8f8", height: "75vh" }}
   >
     <Button
-      title="SECONDARY"
+      title="Docs"
+      caption="Learn how to extend your system"
+      src="/img/icons/docs.svg"
     />
   </div>
 );
