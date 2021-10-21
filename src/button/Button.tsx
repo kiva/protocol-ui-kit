@@ -5,12 +5,11 @@ import "./Button.scss";
 
 export interface ButtonProps {
   title: string;
-  caption: string;
-  src: string;
 }
 
 export const Button: FunctionComponent<ButtonProps> = (prop) => {
   return (
+<<<<<<< HEAD
     <div className="flex flex-col justify-center rounded-3xl protocol-ui-card bg-white p-1.5">
       <div className="flex flex-col max-w-md px-8 py-6 space-y-5 items-center">
         <img src={prop.src} width={36} alt={prop.caption} />
@@ -45,5 +44,8 @@ export const Button: FunctionComponent<ButtonProps> = (prop) => {
       </div>
     </div>
 >>>>>>> 30b6f2d (Introduce tailwind and the first component)
+=======
+    <button type="button" className="btn btn-primary">{prop.title}</button>
+>>>>>>> 3fefebf (New components added: QRCode, FormInput, Alert, ActionCard, Button)
   );
 };

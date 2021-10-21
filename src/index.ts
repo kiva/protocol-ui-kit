@@ -1,5 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+export { JurneCard } from "./jurne-card/JurneCard";
+>>>>>>> 3fefebf (New components added: QRCode, FormInput, Alert, ActionCard, Button)
 export { Button } from "./button/Button";
 =======
 export {Button} from "./button/Button";
