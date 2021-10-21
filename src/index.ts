@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+export { ActionCard } from "./action-card/ActionCard";
 export { Button } from "./button/Button";
-=======
-export {Button} from "./button/Button";
->>>>>>> 5fbac97 (Ready to create NPM package)
-=======
-export { Button } from "./button/Button";
->>>>>>> 30b6f2d (Introduce tailwind and the first component)
+export { Alert } from "./alert/Alert";
+export { FormInput } from "./form-input/FormInput";
+export { QrCode } from "./qr-code/QrCode";
