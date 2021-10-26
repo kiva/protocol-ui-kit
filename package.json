@@ -64,7 +64,7 @@
     "@popperjs/core": "^2.10.2",
     "autoprefixer": "^10.3.7",
     "bootstrap": "^5.1.1",
-    "jquery": "^1.12.4",
+    "jquery": "^3.5.0",
     "popper.js": "^1.16.1",
     "postcss": "^8.3.10",
     "qrcode": "^1.4.4",
