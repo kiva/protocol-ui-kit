@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 import QRCode from 'qrcode';
-import { CheckCircle, ExclamationCircle } from 'react-bootstrap-icons';
+import { CheckCircle, ExclamationCircle, XCircle } from 'react-bootstrap-icons';
 import "./QrCode.scss";
 import { useEffect } from 'react';
 
@@ -28,14 +28,21 @@ export const QrCode: FunctionComponent<QrCodeProps> = (prop) => {
       qrRendered = true;
     }
   }, [writeQRtoCanvas]);
+  const renderQrIcon = () => {
+    switch(prop.state) {
+      case "warning":
+        return <ExclamationCircle className={`qr-icon dialog-icon ${prop.state}`}/>;
+      case "error":
+        return <XCircle className={`qr-icon dialog-icon ${prop.state}`}/>;
+      default:
+        return <CheckCircle className={`qr-icon dialog-icon ${prop.state}`}/>;
+    }
+  }
 
   return (
     <div id="qr-box">
       <canvas id="qr-code"></canvas>
-        {prop.state === 'warning' ?
-          <ExclamationCircle className={`qr-icon dialog-icon ${prop.state}`}/> :
-          <CheckCircle className={`qr-icon dialog-icon ${prop.state}`}/> 
-        }
+      {renderQrIcon()}
     </div>
   );
 };

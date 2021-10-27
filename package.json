@@ -1,5 +1,5 @@
 {
-  "name": "@kiva/protocol-ui-kit",
+  "name": "@kiva/kiva-protocol-ui-kit",
   "version": "1.0.1",
   "description": "Protocol Web UI",
   "main": "build/index.js",
@@ -65,6 +65,7 @@
     "autoprefixer": "^10.3.7",
     "bootstrap": "^5.1.1",
     "jquery": "^3.5.0",
+    "classnames": "^2.3.1",
     "popper.js": "^1.16.1",
     "postcss": "^8.3.10",
     "qrcode": "^1.4.4",
