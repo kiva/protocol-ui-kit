@@ -14,6 +14,7 @@ const plugins = [
   commonjs(),
   typescript(),
   scss(),
+  typescript({ useTsconfigDeclarationDir: true })
 ];
 
 const external = [

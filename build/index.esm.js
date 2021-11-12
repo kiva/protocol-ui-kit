@@ -138,7 +138,7 @@ var ConsentCard = function (prop) {
                 React.createElement(Button, { title: prop.accept, style: "primary" })))));
 };
 
-exports.Components = {
+var index = {
     ActionCard: ActionCard,
     Button: Button,
     Alert: Alert,
@@ -146,4 +146,6 @@ exports.Components = {
     QrCode: QrCode,
     ConsentCard: ConsentCard
 };
+
+export { index as default };
 //# sourceMappingURL=index.esm.js.map
