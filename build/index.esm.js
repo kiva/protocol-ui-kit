@@ -4,11 +4,7 @@ import QRCode from 'qrcode';
 import { CheckCircle, XCircle, ExclamationCircle } from 'react-bootstrap-icons';
 
 var ActionCard = function (prop) {
-    return (React.createElement("div", { className: "flex flex-col justify-center rounded-3xl jurne-card bg-white p-1.5" },
-        React.createElement("div", { className: "flex flex-col max-w-md px-8 py-6 space-y-5 items-center" },
-            React.createElement("img", { src: prop.src, width: 36, alt: prop.caption }),
-            React.createElement("h3", { className: "font-bold text-gray-900 text-xl" }, prop.title),
-            React.createElement("span", { className: "text-center text-gray-600" }, prop.caption))));
+    return (React.createElement("div", { className: "flex flex-col justify-center rounded-3xl jurne-card bg-white p-1.5" }, React.createElement("div", { className: "flex flex-col max-w-md px-8 py-6 space-y-5 items-center" }, React.createElement("img", { src: prop.src, width: 36, alt: prop.caption }), React.createElement("h3", { className: "font-bold text-gray-900 text-xl" }, prop.title), React.createElement("span", { className: "text-center text-gray-600" }, prop.caption))));
 };
 
 function createCommonjsModule(fn) {
@@ -87,9 +83,7 @@ var Alert = function (prop) {
 };
 
 var FormInput = function (prop) {
-    return (React.createElement("div", { className: "form-input" },
-        React.createElement(Form.Label, null, "Username"),
-        React.createElement(Form.Control, { className: "text-input-field", type: "email", placeholder: "Enter email" })));
+    return (React.createElement("div", { className: "form-input" }, React.createElement(Form.Label, null, "Username"), React.createElement(Form.Control, { className: "text-input-field", type: "email", placeholder: "Enter email" })));
 };
 
 var QrCode = function (prop) {
@@ -120,32 +114,12 @@ var QrCode = function (prop) {
                 return React.createElement(CheckCircle, { className: "qr-icon dialog-icon " + prop.state });
         }
     };
-    return (React.createElement("div", { id: "qr-box" },
-        React.createElement("canvas", { id: "qr-code" }),
-        renderQrIcon()));
+    return (React.createElement("div", { id: "qr-box" }, React.createElement("canvas", { id: "qr-code" }), renderQrIcon()));
 };
 
 var ConsentCard = function (prop) {
-    return (React.createElement("div", { className: "flex flex-col justify-center rounded-3xl jurne-card bg-white p-1.5" },
-        React.createElement("div", { className: "flex flex-col max-w-md px-8 py-6 space-y-5" },
-            React.createElement("span", { className: "consent-title items-center" }, prop.title),
-            React.createElement("span", { className: "consent-body items-center" }, prop.agreement),
-            React.createElement("ul", null, prop.pii.map(function (item) { return React.createElement("li", { className: "pii-list-item" }, item); }))),
-        React.createElement("div", { className: "row col-flex" },
-            React.createElement("div", { className: "col-sm text-center" },
-                React.createElement(Button, { title: prop.back, style: "secondary" })),
-            React.createElement("div", { className: "col-sm text-center" },
-                React.createElement(Button, { title: prop.accept, style: "primary" })))));
+    return (React.createElement("div", { className: "flex flex-col justify-center rounded-3xl jurne-card bg-white p-1.5" }, React.createElement("div", { className: "flex flex-col max-w-md px-8 py-6 space-y-5" }, React.createElement("span", { className: "consent-title items-center" }, prop.title), React.createElement("span", { className: "consent-body items-center" }, prop.agreement), React.createElement("ul", null, prop.pii.map(function (item) { return React.createElement("li", { className: "pii-list-item" }, item); }))), React.createElement("div", { className: "row col-flex" }, React.createElement("div", { className: "col-sm text-center" }, React.createElement(Button, { title: prop.back, style: "secondary" })), React.createElement("div", { className: "col-sm text-center" }, React.createElement(Button, { title: prop.accept, style: "primary" })))));
 };
 
-var index = {
-    ActionCard: ActionCard,
-    Button: Button,
-    Alert: Alert,
-    FormInput: FormInput,
-    QrCode: QrCode,
-    ConsentCard: ConsentCard
-};
-
-export { index as default };
+export { ActionCard, Alert, Button, ConsentCard, FormInput, QrCode };
 //# sourceMappingURL=index.esm.js.map

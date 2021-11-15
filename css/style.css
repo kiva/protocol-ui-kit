@@ -1,3 +1,8 @@
+.alert {
+  padding: 23.5px 50px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 20px; }
+
 button {
   height: 50px;
   border-radius: 16px !important;
@@ -10,15 +15,31 @@ button {
     background-color: #FFF !important;
     color: #000 !important; }
 
+.form-input {
+  padding: 12px 12px;
+  border: 0.5px solid #D4D4D4;
+  border-radius: 12px;
+  background-color: #FFF;
+  outline: none;
+  height: 68px;
+  font-size: 13px; }
+  .form-input *:focus {
+    box-shadow: none !important; }
+
+.form-label {
+  font-weight: 500;
+  margin-left: 10px;
+  margin-bottom: 0px; }
+
+.text-input-field {
+  border: none;
+  font-size: 13px;
+  padding: none !important; }
+
 .action-card {
   font-family: inherit;
   width: 300px;
   height: 300px; }
-
-.alert {
-  padding: 23.5px 50px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
-  border-radius: 20px; }
 
 .qr-loading-title {
   color: #e7e7e7;
@@ -54,27 +75,6 @@ button {
     fill: #27c9ce; }
   .qr-icon.verifying {
     color: #24778b; }
-
-.form-input {
-  padding: 12px 12px;
-  border: 0.5px solid #D4D4D4;
-  border-radius: 12px;
-  background-color: #FFF;
-  outline: none;
-  height: 68px;
-  font-size: 13px; }
-  .form-input *:focus {
-    box-shadow: none !important; }
-
-.form-label {
-  font-weight: 500;
-  margin-left: 10px;
-  margin-bottom: 0px; }
-
-.text-input-field {
-  border: none;
-  font-size: 13px;
-  padding: none !important; }
 
 .consent-card {
   font-family: inherit;

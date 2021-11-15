@@ -1,10 +1,7 @@
-/// <reference types="react" />
-declare const _default: {
-    ActionCard: import("react").FunctionComponent<import("./action-card/ActionCard").ActionCardProps>;
-    Button: import("react").FunctionComponent<import("./button/Button").ButtonProps>;
-    Alert: import("react").FunctionComponent<import("./alert/Alert").AlertProps>;
-    FormInput: import("react").FunctionComponent<import("./form-input/FormInput").FormInputProps>;
-    QrCode: import("react").FunctionComponent<import("./qr-code/QrCode").QrCodeProps>;
-    ConsentCard: import("react").FunctionComponent<import("./consent-card/ConsentCard").ConsentCardProps>;
-};
-export default _default;
+import { ActionCard } from "./action-card/ActionCard";
+import { Button } from "./button/Button";
+import Alert from "./alert/Alert";
+import { FormInput } from "./form-input/FormInput";
+import { QrCode } from "./qr-code/QrCode";
+import { ConsentCard } from "./consent-card/ConsentCard";
+export { ActionCard, Button, Alert, FormInput, QrCode, ConsentCard };

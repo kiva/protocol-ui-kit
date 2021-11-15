@@ -13,7 +13,11 @@ const plugins = [
   resolve(),
   commonjs(),
   typescript(),
-  scss(),
+  scss({
+    output: "./build/css/style.css",
+    failOnError: true,
+    runtime: require("sass"),
+  }),
   typescript({ useTsconfigDeclarationDir: true })
 ];
 
