@@ -1,0 +1,24 @@
+.form-input {
+  padding: 12px 12px;
+  border: 0.5px solid #D4D4D4;
+  border-radius: 12px;
+  background-color: #FFF;
+  outline: none;
+  height: 68px;
+  font-size: 13px;
+  *:focus
+  {
+      box-shadow: none !important;
+  }
+}
+.form-label {
+  font-weight: 500;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.text-input-field {
+  border: none;
+  font-size: 13px;
+  padding: none !important;
+}

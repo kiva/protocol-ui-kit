@@ -3,5 +3,4 @@ import "./Alert.scss";
 export interface AlertProps {
     title: string;
 }
-declare const Alert: FunctionComponent<AlertProps>;
-export default Alert;
+export declare const Alert: FunctionComponent<AlertProps>;
