@@ -1,13 +1,14 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, MouseEventHandler } from "react";
 import "./Button.scss";
 
 export interface ButtonProps {
   title: string;
-  style: string
+  style: string;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
 export const Button: FunctionComponent<ButtonProps> = (prop) => {
   return (
-    <button type="button" className="btn btn-primary">{prop.title}</button>
+    <button type="button" className="btn btn-primary" onClick={prop.onClick}>{prop.title}</button>
   );
 };
