@@ -1,6 +1,6 @@
 {
   "name": "kiva-protocol-ui-kit",
-  "version": "1.0.43",
+  "version": "1.0.55",
   "description": "Protocol Web UI",
   "main": "build/index.js",
   "module": "build/index.esm.js",
