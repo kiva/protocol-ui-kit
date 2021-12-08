@@ -2,6 +2,9 @@ import React, { FunctionComponent } from "react";
 import { Button } from "../button/Button";
 import _ from "lodash";
 import "./ConsentCard.scss";
+import "../typography.scss";
+import "../variables.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export interface ConsentCardProps {
   title: string;
