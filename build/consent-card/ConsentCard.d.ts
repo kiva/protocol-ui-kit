@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export interface ConsentCardProps {
     title: string;
     agreement: string;
-    pii: JSX.Element | null;
+    pii: string[];
     backBtnHandler?: MouseEventHandler<HTMLButtonElement>;
     backBtnContent?: string;
     acceptBtnHandler: MouseEventHandler<HTMLButtonElement>;

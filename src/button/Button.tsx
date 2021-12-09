@@ -9,6 +9,6 @@ export interface ButtonProps {
 
 export const Button: FunctionComponent<ButtonProps> = (prop) => {
   return (
-    <button type="button" className="btn btn-primary" onClick={prop.onClick}>{prop.title}</button>
+    <button type="button" className="btn btn-primary protocol-button" onClick={prop.onClick}>{prop.title}</button>
   );
 };
