@@ -1,108 +1,37 @@
 import React from "react";
 import "../src/common/ui.scss";
-import { FingerReference } from "../src";
+import { Story, Meta } from '@storybook/react';
+import { FingerReference, FingerReferenceProps } from "../src/finger-reference/FingerReference";
 
 export default {
-  title: "Finger Reference",
+  title: 'Finger Reference',
   component: FingerReference,
+  argTypes: {
+    hand: {
+      name: 'hand',
+      control: {
+        type: 'radio',
+        options: ['left', 'right'],
+      },
+    },
+    fingerPosition: {
+      name: 'fingerPosition',
+      control: {
+        type: 'radio',
+        options: ['0', '1', '2', '3', '4', '5']
+      }
+    }
+  },
+  args: {
+    hand: 'left',
+    fingerPosition: '0'
+  }
+} as Meta;
+
+const Template: Story<FingerReferenceProps> = (args) => <FingerReference {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  hand: 'left',
+  fingerPosition: '1'
 };
-
-export const Left = (): React.ReactNode => (
-  <div
-    className="flex items-center justify-center"
-    style={{ margin: "auto 0", background: "#f8f8f8", height: "75vh" }}
-  >
-    <FingerReference
-      hand="left"
-      fingerPosition="0"
-    />
-  </div>
-);
-
-export const LeftVariants = (): React.ReactNode => (
-  <div
-    className="flex items-center justify-center"
-    style={{ margin: "auto 0", background: "#f8f8f8", height: "75vh" }}
-  >
-    <div style={{ margin: "5px"}}>
-      <FingerReference
-        hand="left"
-        fingerPosition="1"
-      />
-    </div>
-    <div style={{ margin: "5px"}}>
-      <FingerReference
-        hand="left"
-        fingerPosition="2"
-      />
-    </div>
-    <div style={{ margin: "5px"}}>
-      <FingerReference
-        hand="left"
-        fingerPosition="3"
-      />
-    </div>
-    <div style={{ margin: "5px"}}>
-      <FingerReference
-        hand="left"
-        fingerPosition="4"
-      />
-    </div>
-    <div style={{ margin: "5px"}}>
-      <FingerReference
-        hand="left"
-        fingerPosition="5"
-      />
-    </div>
-  </div>
-);
-
-export const Right = (): React.ReactNode => (
-  <div
-    className="flex items-center justify-center"
-    style={{ margin: "auto 0", background: "#f8f8f8", height: "75vh" }}
-  >
-    <FingerReference
-      hand="right"
-      fingerPosition="0"
-    />
-  </div>
-);
-
-export const RightVariants = (): React.ReactNode => (
-  <div
-    className="flex items-center justify-center"
-    style={{ margin: "auto 0", background: "#f8f8f8", height: "75vh" }}
-  >
-    <div style={{ margin: "5px"}}>
-      <FingerReference
-        hand="right"
-        fingerPosition="1"
-      />
-    </div>
-    <div style={{ margin: "5px"}}>
-      <FingerReference
-        hand="right"
-        fingerPosition="2"
-      />
-    </div>
-    <div style={{ margin: "5px"}}>
-      <FingerReference
-        hand="right"
-        fingerPosition="3"
-      />
-    </div>
-    <div style={{ margin: "5px"}}>
-      <FingerReference
-        hand="right"
-        fingerPosition="4"
-      />
-    </div>
-    <div style={{ margin: "5px"}}>
-      <FingerReference
-        hand="right"
-        fingerPosition="5"
-      />
-    </div>
-  </div>
-);

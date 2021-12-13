@@ -4,7 +4,7 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import copy from "rollup-plugin-copy";
-import svg from 'rollup-plugin-svg'
+import svg from 'rollup-plugin-svg';
 import fs from 'fs';
 import image from 'rollup-plugin-img';
 import path from 'path';
@@ -100,6 +100,7 @@ const exports = [
 
 // svg files
 const svgFiles = fs.readdirSync('./src/assets/icons/')
+console.log(svgFiles);
 for (const file of svgFiles) {
   exports.push({
     input: `./src/assets/icons/${file}`,

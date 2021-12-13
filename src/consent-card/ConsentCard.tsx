@@ -29,6 +29,7 @@ export const ConsentCard: FunctionComponent<ConsentCardProps> = (prop) => {
       <div className="row col-flex">
         <div className="col-sm text-center">
           <Button
+            classes={['accept']}
             title={prop.acceptBtnContent}
             style="primary"
             onClick={prop.acceptBtnHandler}
