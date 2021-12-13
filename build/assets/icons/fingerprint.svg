@@ -1,6 +1,0 @@
-'use strict';
-
-var fingerprint = "<svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13.5 15V28.5L16.1526 29.3842C17.3762 29.7921 18.6575 30 19.9473 30H27.5406C28.9706 30 30.2019 28.9906 30.4823 27.5883L32.2315 18.8424C32.6189 16.9054 31.0611 15.1293 29.0902 15.2607L21.75 15.75L22.2314 10.4541C22.3757 8.86775 21.1266 7.5 19.5337 7.5C18.5822 7.5 17.7005 7.99924 17.2109 8.81516L13.5 15Z\" fill=\"#004FD4\"/>\n    <rect opacity=\"0.3\" x=\"3\" y=\"13.5\" width=\"7.5\" height=\"16.5\" rx=\"1\" fill=\"#004FD4\"/>\n</svg>";
-
-module.exports = fingerprint;
-//# sourceMappingURL=fingerprint.svg.map
