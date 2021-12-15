@@ -1,19 +1,32 @@
 import React from "react";
 import "../src/common/ui.scss";
-import { Alert } from "../src";
+import { Alert, AlertProps } from "../src/alert/Alert";
+import { Story, Meta } from '@storybook/react';
 
 export default {
-  title: "Alert",
+  title: 'Alert',
   component: Alert,
-};
+  argTypes: {
+    variant: {
+      name: 'variant',
+      control: { type: 'radio' },
+      options: ['success', 'failure', 'info'],
+    },
+    text: {
+      name: 'text',
+      control: { type: 'text' }
+    }
+  },
+  args: {
+    text: "Test",
+    variant: "success"
+  }
+} as Meta;
 
-export const Default = (): React.ReactNode => (
-  <div
-    className="flex items-center justify-center"
-    style={{ margin: "auto 0", background: "#f8f8f8", height: "75vh" }}
-  >
-    <Alert
-      title="This is an alert -- check it out!"
-    />
-  </div>
-);
+const Template: Story<AlertProps> = (args) => <Alert {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  text: "Test",
+  variant: "success"
+};

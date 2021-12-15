@@ -3,7 +3,7 @@ import "../src/common/ui.scss";
 import { FormInput } from "../src";
 
 export default {
-  title: "FormInput",
+  title: "Form Input",
   component: FormInput,
 };
 
