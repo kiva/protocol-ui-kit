@@ -12,7 +12,7 @@ export default {
   component: ActionCard,
 };
 
-export const FingerprintScan = (): React.ReactNode => (
+export const Default = (): React.ReactNode => (
   <div
     className="flex items-center justify-center"
     style={{ margin: "auto 0", background: "#f8f8f8", height: "75vh" }}
@@ -32,8 +32,8 @@ export const Docs = (): React.ReactNode => (
   >
     <ActionCard
       title="Docs"
-      caption="Read the docs"
-      src={docsIcon}
+      caption="Learn how to extend your system"
+      src={fingerprintIcon}
     />
   </div>
 );

@@ -4,9 +4,8 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import copy from "rollup-plugin-copy";
-import svg from 'rollup-plugin-svg';
 import fs from 'fs';
-import image from 'rollup-plugin-img';
+import svg from 'rollup-plugin-svg';
 import path from 'path';
 import pkg from "./package.json";
 import tailwind from "rollup-plugin-tailwindcss";
@@ -33,24 +32,32 @@ const getDirectories = (srcpath) => {
     .filter(path => fs.statSync(path).isDirectory());
 }
 
-// css files
-const components = getDirectories('./src/');
-for (let component of components) {
-  const fileNames = fs.readdirSync(component);
-  for (const fileName of fileNames) {
-    if (fileName.includes(".scss")) {
-      copyConfig.targets.push({
-        src: `${component}/${fileName}`,
-        dest: `build/${component.replace('src/', '')}`,
-        rename: fileName
-      }) 
+const addToConfig = (component, fileName) => {
+  if (fileName.includes(".scss") || fileName.includes(".svg")) {
+    copyConfig.targets.push({
+      src: `${component}/${fileName}`,
+      dest: `build/${component.replace('src/', '')}`,
+      rename: fileName
+    }) 
+  }
+}
+
+// css and svg files
+const processCSSandSVGs = (directory) => {
+  for (let directoryItems of directory) {
+    processCSSandSVGs(getDirectories(directoryItems));
+    const fileNames = fs.readdirSync(directoryItems);
+    for (const fileName of fileNames) {
+      addToConfig(directoryItems, fileName);
     }
   }
 }
 
+const components = getDirectories('./src/');
+processCSSandSVGs(components);
+
 const plugins = [
   peerDepsExternal(),
-  image(),
   resolve(),
   commonjs(),
   typescript({ useTsconfigDeclarationDir: true }),
@@ -67,7 +74,8 @@ const plugins = [
     // (highly recommended when packaging for distribution).
     purge: false
   }),
-  copy(copyConfig)
+  copy(copyConfig),
+  svg()
 ];
 
 const external = [
@@ -97,22 +105,5 @@ const exports = [
     external,
   }
 ];
-
-// svg files
-const svgFiles = fs.readdirSync('./src/assets/icons/')
-console.log(svgFiles);
-for (const file of svgFiles) {
-  exports.push({
-    input: `./src/assets/icons/${file}`,
-    output: {
-      file: `./build/assets/icons/${file}`,
-      format: "cjs",
-      sourcemap: true,
-    },
-    plugins: [
-      svg()
-    ]
-  })
-}
 
 export default exports;
