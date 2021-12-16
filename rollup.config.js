@@ -5,7 +5,7 @@ import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import copy from "rollup-plugin-copy";
 import fs from 'fs';
-import svg from 'rollup-plugin-svg';
+import image from '@rollup/plugin-image';
 import path from 'path';
 import pkg from "./package.json";
 import tailwind from "rollup-plugin-tailwindcss";
@@ -75,7 +75,7 @@ const plugins = [
     purge: false
   }),
   copy(copyConfig),
-  svg()
+  image()
 ];
 
 const external = [

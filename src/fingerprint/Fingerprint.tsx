@@ -16,6 +16,8 @@ export const Fingerprint: FunctionComponent<FingerprintProps> = (prop) => {
     failure: fingerprintFailure
   }
   const svgSrc = variants[prop.variant]
+  console.log(svgSrc);
+  debugger;
   return (
     <img src={svgSrc} width={200} alt="Fingerprint reference image" />
   );

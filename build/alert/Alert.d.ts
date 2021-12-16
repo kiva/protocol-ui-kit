@@ -1,6 +1,7 @@
 import { FunctionComponent } from "react";
 import "./Alert.scss";
 export interface AlertProps {
-    title: string;
+    text: string;
+    variant: string;
 }
 export declare const Alert: FunctionComponent<AlertProps>;
