@@ -1,5 +1,25 @@
 .alert {
-  padding: 23.5px 50px;
+  padding: 10px 25px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
-  border-radius: 20px;
+  border-radius: 14px;
+}
+
+.alert-icon {
+  display: inline-block;
+  width: 30px;
+}
+
+.alert-text {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  &.success {
+    color: #169D00;
+  }
+  &.failure {
+    color: #FF0000;
+  }
+  &.info {
+    color: #004FD4;
+  }
 }

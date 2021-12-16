@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   stories: ["../stories/**/*.stories.tsx"],
   // Add any Storybook addons you want here: https://storybook.js.org/addons/
-  addons: ['@storybook/addon-essentials'],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-controls'],
   typescript: {
     check: false,
     checkOptions: {},
